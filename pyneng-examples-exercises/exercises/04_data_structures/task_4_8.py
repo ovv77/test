@@ -19,3 +19,14 @@
 '''
 
 IP = '192.168.3.1'
+
+IP = IP.split('.')
+
+out_template = '''
+Вывод:
+{0:10} {1:10} {2:10} {3:10}
+{0:10b} {1:10b} {2:10b} {3:10b}
+'''
+
+print(out_template.format( int(IP[0]), int(IP[1]), int(IP[2]), int(IP[3]) ))
+
