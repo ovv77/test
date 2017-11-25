@@ -16,12 +16,12 @@ VLANS = [10, 20, 30, 1, 2, 100, 10, 30, 3, 4, 10]
 
 print(type(VLANS),VLANS)
 
-set_VLANS = set(VLANS)              #convert to set and deduplicate
-print(type(set_VLANS), set_VLANS)
+#set_VLANS = set(VLANS)              #convert to set and deduplicate
+#print(type(set_VLANS), set_VLANS)
 
-VLANS = list(set_VLANS)             #convert back to list
+VLANS = sorted(list(set(VLANS)))             #convert back to list
 print(type(VLANS), VLANS)
 
-sorted_VLANS = sorted(VLANS)        #sort list VLANS
-print(sorted_VLANS)
+#sorted_VLANS = sorted(VLANS)        #sort list VLANS
+#print(sorted_VLANS)
 
